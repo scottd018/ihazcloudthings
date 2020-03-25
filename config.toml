@@ -6,14 +6,14 @@ theme = "mainroad"
 summarylength = 30
 paginate = 10
 
-# disqusShortname = "your-disqus-shortname"
+disqusShortname = "scottd018"
 # googleAnalytics = "your-google-analytics-id"
-# enableRobotsTXT = true
+enableRobotsTXT = true
 
 [Author] # Used in authorbox
   name = "Dustin Scott"
   bio = "Dustin is a Senior Cloud Native Field Engineer currently working for VMware"
-  avatar = "img/avatar.png"
+  avatar = "img/dscott.jpg"
 
 ## Site Settings
 [Params]
@@ -32,15 +32,16 @@ paginate = 10
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js"
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML"
   highlightColor = "#e22d30"
-  customCSS = ["css/custom.css"]
-  customJS = ["js/custom.js"]
+  customCSS = ["/css/custom.css"]
+#  customJS = ["/js/custom.js"]
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
-  list = "left"  # Configure layout for list pages
+  list = false  # Configure layout for list pages
   single = false # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  #widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
   recent_num = 10
@@ -68,3 +69,19 @@ paginate = 10
 #  title = "My Home Page"
 #  url = "http://example.com"
 
+## Top Menu
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = -1000
+  [[menu.main]]
+    identifier = "about"
+    name = "about me"
+    url = "/about/"
+    weight = 0
+  [[menu.main]]
+    name = "posts"
+    url = "/posts/"
+    weight = 100
