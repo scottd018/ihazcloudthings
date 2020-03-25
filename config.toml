@@ -1,72 +1,70 @@
 ## Basic Configuration
 baseurl = "https://ihazcloudthings.xyz"
 languageCode = "en"
+title = "ihaz cloud things"
+theme = "mainroad"
+summarylength = 30
+paginate = 10
 
-title = "ihaz cloud things - tech blog"
-theme = "hyde-hyde"
-
-## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
 # googleAnalytics = "your-google-analytics-id"
 # enableRobotsTXT = true
 
-# summarylength = 30
-
-#paginate = 5
+[Author] # Used in authorbox
+  name = "Dustin Scott"
+  bio = "Dustin is a Senior Cloud Native Field Engineer currently working for VMware"
+  avatar = "img/avatar.png"
 
 ## Site Settings
-[params]
-    author = "Dustin Scott"
-    title = "Senior Field Engineer - Cloud Native Apps"
-    # description = "..."
-    authorimage = "/img/hugo.png"
-    dateformat = "Jan 2, 2006"
+[Params]
+  subtitle = "tech blog"
+  descriptions = "yet another tech blog"
+  dateformat = "Jan 2, 2006"
+  twitter_cards = true
+  opengraph = true
+  readmore = true
+  authorbox = true
+  toc = true
+  post_navigation = true
+  post_meta = ["date", "categories", "translations"]
+  mainSections = ["posts", "about", "blog", "news"]
+  mathjax = true
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js"
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML"
+  highlightColor = "#e22d30"
+  customCSS = ["css/custom.css"]
+  customJS = ["js/custom.js"]
 
-    # blog posts in main
-    mainSections = ["posts"]
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
 
-    # sidebar, copyright & license
-    copyright = "ihaz cloud things"
-    since = 2020
-    # license = "CC BY-SA 4.0"
-    # licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
-    # showBuiltWith = true
-
-    # https://highlightjs.org
-    highlightjs = true
-    highlightjsstyle = "github"
-    
-    # please choose either GraphComment or Disqus or Utterances
-    #GraphCommentId = "..."
-    #UtterancesRepo = "..." # https://utteranc.es/
-    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
-    #UtterancesTheme = "..." # github-light or github-dark
-
-    # Table of contents
-    #toc = none, "hugo", or "tocbot"
+[Params.widgets]
+  recent_num = 10
+  tags_counter = true
 
 ## Social Accounts
-[params.social]
-    github = "scottd018"
-    linkedin = "dustin-scott-36a95190"
-    twitter = "ihazcloud"
-    # instagram = "<username>"
-    # xing = "<username>"
-    # facebook = "<username>"
-    # stackoverflow = "<username>"
-    # telegram = "<username>"
-    # orcid = "<xxxx-xxxx-xxxx-xxxx>"
-    # email = "your-email@example.com"
-    # gravatar = "your-email@example.com"
+[Params.widgets.social]
+  github = "scottd018"
+  linkedin = "dustin-scott-36a95190"
+  twitter = "ihazcloud"
+  # facebook = "username"
+  # instagram = "username"
+  # telegram = "username"
+  # gitlab = "username"
+  # bitbucket = "username"
+  # email = "example@example.com"
 
-## Main Menu
-[[menu.main]]
-    name = "Posts"
-    weight = 100
-    identifier = "posts"
-    url = "/posts/"
-[[menu.main]]
-    name = "About"
-    identifier = "about"
-    weight = 1000
-    url = "/about/"
+# Custom social links
+#[[Params.widgets.social.custom]]
+#  title = "Youtube"
+#  url = "https://youtube.com/user/username"
+#  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+
+#[[Params.widgets.social.custom]]
+#  title = "My Home Page"
+#  url = "http://example.com"
+
