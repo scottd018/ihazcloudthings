@@ -20,6 +20,6 @@ being lazy.
 
 I am passionate about all things IT.  My background started in Networking/Linux in the US Air Force and very rapidly evolved into the 
 management and cloud automation space.  My post-military career included several contracting/sub-contracting gigs with the DoD.  Following 
-that, I spent five years as an Architect at Red Hat in this space and decided that I was interested in
-seeing the next big thing, which is now Kubernetes.  I am currently fulfilling a role as a Senior Cloud Native Field Engineer 
-at VMware.
+that, I spent five years as an Architect and Managing Architect at Red Hat in this space and decided that I was interested in
+seeing the next big thing, which is now Kubernetes.  I am currently fulfilling a role as a Staff Platform Field Engineer
+at VMware as part of the Tanzu Labs organization.
