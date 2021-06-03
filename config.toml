@@ -12,7 +12,7 @@ enableRobotsTXT = true
 
 [Author] # Used in authorbox
   name = "Dustin Scott"
-  bio = "Dustin is a Senior Cloud Native Field Engineer currently working for VMware"
+  bio = "Dustin is a Staff Platform Field Engineer currently working for VMware"
   avatar = "img/dscott.jpg"
 
 ## Site Settings
